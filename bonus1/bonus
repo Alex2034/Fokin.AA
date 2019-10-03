@@ -1,0 +1,12 @@
+p = [2]
+c = 0
+for n in range(3,1001):
+    for pj in p:
+        if n%pj == 0:
+            c += 1
+    if c == 0:
+        p.append(n)
+    c = 0
+print(p)
+    
+            
